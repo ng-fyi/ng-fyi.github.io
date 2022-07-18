@@ -47,25 +47,24 @@
     top: 50%;
     transform: translateY(-50%);
     }
-/* #endregion */
 
-/* #region Drive Safe Honey */
-
-.gridContainer {
-  display: inline-grid;
-  grid-template-columns: 500px 500px 500px;
-  grid-template-rows: 250px 250px 250px;
-  grid-gap: 8px;
+    .gridContainer {
+    display: inline-grid;
+    grid-template-columns: 500px 500px 500px;
+    grid-template-rows: 250px 250px 250px;
+    grid-gap: 8px;
     margin-left: auto;
-
-}
+    }
 
     .grid-item {
     background-color: rgba(255, 255, 255, 0.8);
-
     font-size: 30px;
     text-align: center;
     }
+
+/* #endregion */
+
+/* #region Drive Safe Honey - 2x2 top left, the rest 1x1 */
 
     .dsh_00 {
         grid-column: 1 /span 2;
@@ -111,7 +110,7 @@
 }
 /* #endregion */
 
-/* MOOSELOBBY PAGE TWO */
+/* #region mooseLobby - 2x2 top left, 1x2 bottom right, the rest 1x1 */
 
 .mLob_00{
     grid-column: 1/span 2;
@@ -139,72 +138,68 @@
     grid-row: 3;
 }
 
-/* DANCE BOYS */
+/* #endregion */
 
-.Fitem1 {
+/* #region Nanoscape Intro - 2x2 top left, 1x2 top right, 2x1 bottom right */
+.nanoIntro_00 {
     grid-column: 1/span2;
     grid-row: 1/span2;
 }
 
-.Fitem2{
+.nanoIntro_01{
     grid-column: 3;
     grid-row: 1/span2;
 }
 
-.Fitem3{
+.nanoIntro_02{
     grid-column: 1;
     grid-row: 3;
     background-color:rgb(255, 255, 255);
 }
 
-.Fitem4 {
+.nanoIntro_03{
     grid-column: 2/span2;
     grid-row: 3;
 }
+/* #endregion */
 
+/* #region Nanoscape Art Direction - 2x2 top right, the rest 1x1 */
 
-/* BOREALIS GRID */
-
-.Iitem1{
+.nanoArtDir_00 {
     grid-column: 1;
     grid-row: 1;
 
 }
 
-.Iitem2{
+.nanoArtDir_01 {
     grid-column: 1;
     grid-row: 2;
 }
 
-.Iitem3{
+.nanoArtDir_02 {
     grid-column: 1;
     grid-row: 3;
 }
 
-.Iitem4{
+.nanoArtDir_03 {
     grid-column: 2/span2;
     grid-row: 1/span2;
     
 }
 
-.Iitem5{
-    grid-column: 3;
-    grid-row: 1/span2;
-    
-}
-
-.Iitem5{
+.nanoArtDir_04 {
     grid-column: 2;
     grid-row: 3;
 
 }
 
-.Iitem6{
+.nanoArtDir_05 {
     grid-column: 3;
     grid-row: 3;
 
 }
 
+/* #endregion */
 
 /* MISCELLANIOUSSADJ */
 
@@ -509,9 +504,9 @@ h4 {
 
             <div>
                 <div class="gridContainer">
-                    <div class="grid-item Fitem1"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/Nanoscape/heroGif_22.gif?raw=true" alt="nanoHeroGif" style="width: 1008px; height: 508px;"> </div>
-                  <div class="grid-item Fitem2"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/Nanoscape/cavInsertion_00.png?raw=true" alt="cavInsertion" style="width: 500px; height: 508px;"> </div>
-                  <div class="grid-item Fitem3 leftAlign">  
+                    <div class="grid-item nanoIntro_00"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/Nanoscape/heroGif_22.gif?raw=true" alt="nanoHeroGif" style="width: 1008px; height: 508px;"> </div>
+                  <div class="grid-item nanoIntro_01"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/Nanoscape/cavInsertion_00.png?raw=true" alt="cavInsertion" style="width: 500px; height: 508px;"> </div>
+                  <div class="grid-item nanoIntro_02 leftAlign">  
                     <h3>Nanoscape</h3>
                     <h2>2021</h2>
                     <h2>Lead Artist</h2>
@@ -521,14 +516,14 @@ h4 {
                     </h1>
     
                   </div>  
-                  <div class="grid-item Fitem4"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/Nanoscape/receptorCloseUp_00.png?raw=true" alt="djkl" style="width: 1008px; height: 250px;"> </div>
+                  <div class="grid-item nanoIntro_03"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/Nanoscape/receptorCloseUp_00.png?raw=true" alt="djkl" style="width: 1008px; height: 250px;"> </div>
                   
                 </div>
             </div>
             
             <div>
                 <div class="gridContainer">
-                    <div class="Iitem1 leftAlign"> 
+                    <div class="nanoArtDir_00 leftAlign"> 
                         <h4>Art Direction and Conceptual Design</h4>
                         
                         <h1>I guided the character and atmosphere of the experience throughout its development. <br/>
@@ -536,11 +531,11 @@ h4 {
                             From reference through to concept art, renders and iterations,
                             I worked to create a cohesive visual language that would express the chaos and complexity of the molecular world. </h1>
                     </div>
-                    <div class="Iitem2"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/Nanoscape/artDir_concept_00.png?raw=true" alt="djkl" style="width: 500px; height:250px;"> </div>
-                    <div class="Iitem3">  <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/Nanoscape/artDir_concept_01.png?raw=true" alt="djkl" style="width: 500px; height: 250px;"> </div>  
-                    <div class="Iitem4"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/Nanoscape/vrGif_31.gif?raw=true" alt="djkl" style="width: 1008; height: 508px;"> </div>
-                    <div class="Iitem5"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/Nanoscape/artDir_render_00.png?raw=true" alt="djkl" style="width: 500px; height: 250px;"> </div>
-                    <div class="Iitem6"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/Nanoscape/artDir_iteration_00.png?raw=true" alt="djkl" style="width: 500px; height: 250px;"> </div>
+                    <div class="nanoArtDir_01"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/Nanoscape/artDir_concept_00.png?raw=true" alt="djkl" style="width: 500px; height:250px;"> </div>
+                    <div class="nanoArtDir_02">  <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/Nanoscape/artDir_concept_01.png?raw=true" alt="djkl" style="width: 500px; height: 250px;"> </div>  
+                    <div class="nanoArtDir_03"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/Nanoscape/vrGif_31.gif?raw=true" alt="djkl" style="width: 1008; height: 508px;"> </div>
+                    <div class="nanoArtDir_04"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/Nanoscape/artDir_render_00.png?raw=true" alt="djkl" style="width: 500px; height: 250px;"> </div>
+                    <div class="nanoArtDir_05"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/Nanoscape/artDir_iteration_00.png?raw=true" alt="djkl" style="width: 500px; height: 250px;"> </div>
                 </div>
             </div>
 
