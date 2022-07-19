@@ -56,10 +56,40 @@
     margin-left: auto;
     }
 
+    .gridContainer2 {
+    display: inline-grid;
+    grid-template-columns: 500px 500px 5px 500px;
+    grid-template-rows: 250px 250px 250px;
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+    margin-left: auto;
+    }
+
+
     .grid-item {
     background-color: rgba(255, 255, 255, 0.8);
     font-size: 30px;
     text-align: center;
+    }
+
+    .dividingLine{
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    .dividedSection_top {
+        grid-column: 4;
+        grid-row: 1;
+    }
+
+    .dividedSection_mid {
+        grid-column: 4;
+        grid-row: 2;
+    }
+
+    .dividedSection_bot {
+        grid-column: 4;
+        grid-row: 3;
     }
 
 /* #endregion */
@@ -641,7 +671,7 @@ h4 {
 
             <div>
                 <div class="gridContainer">
-                    <div class="z1_1x1"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/Nanoscape/heroGif_22.gif?raw=true" alt="nanoHeroGif" style="width: 1008px; height: 50px;"> </div>
+                    <div class="z1_2x2"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/Nanoscape/heroGif_22.gif?raw=true" alt="nanoHeroGif" style="width: 1008px; height: 508px;"> </div>
                   <div class="z3_1x1"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/Nanoscape/cavInsertion_00.png?raw=true" alt="cavInsertion" style="width: 500px; height: 508px;"> </div>
                   <div class="z7_1x1 leftAlign">  
                     <h3>Nanoscape</h3>
@@ -726,6 +756,9 @@ h4 {
                  </h1>
                 </div> 
                   <div class="z8_1x1"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/Nanoscape/techArt_lipidBilayer_00.png?raw=true" alt="djkl" style="width: 500x; height: 250px;"> </div>
+                  <div class="dividingLine"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/dividingLine.png?raw=true" alt="djkl" style="width: 2px; height: 779px;"> </div>
+
+
                 </div>
             </div>
         
