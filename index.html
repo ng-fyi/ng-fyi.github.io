@@ -56,14 +56,6 @@
     margin-left: auto;
     }
 
-    .gridContainer2 {
-    display: inline-grid;
-    grid-template-columns: 500px 500px 5px 500px;
-    grid-template-rows: 250px 250px 250px;
-    grid-column-gap: 8px;
-    grid-row-gap: 8px;
-    margin-left: auto;
-    }
 
 
     .grid-item {
@@ -72,25 +64,6 @@
     text-align: center;
     }
 
-    .dividingLine{
-        grid-column: 3;
-        grid-row: 1;
-    }
-
-    .dividedSection_top {
-        grid-column: 4;
-        grid-row: 1;
-    }
-
-    .dividedSection_mid {
-        grid-column: 4;
-        grid-row: 2;
-    }
-
-    .dividedSection_bot {
-        grid-column: 4;
-        grid-row: 3;
-    }
 
 /* #endregion */
 
@@ -679,7 +652,7 @@ h4 {
                     <h2>Lead Artist</h2>
                     <h1>An educational first-person exploration game developed by the UNSW 3DVAL. The player navigates a cancer cell as a scientist shrunk to a height of 40 nanometers. 
                         <br><br>
-                        Although my title was Lead Artist, I fulfilled a number of roles on the project. 
+                        As Lead Artist, I fulfilled a number of roles on the project. 
                     </h1>
     
                   </div>  
@@ -732,33 +705,44 @@ h4 {
             </div>
             -->
             
-        
+            <!--
+                SHADERS AND TOOLS
+            -->
+
             <div>
                 <div class="gridContainer">
-                    <div class="z1_1x1"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/Nanoscape/shaderClose_square_11.gif?raw=true" alt="djkl" style="width: 500px; height: 508px;"> </div>
-                  <div class="z2_1x1"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/Nanoscape/shaderFar_19.gif?raw=true" alt="djkl" style="width: 500px; height: 508px;"> </div>
-                  <div class="z7_1x1 leftAlign"> 
-                    <h4>Shaders</h4>
-                    
-                    <h1> <!-- The surface of the cell is a seething, swirling membrane known as the Phospholipid Bilayer. 
-                        The question of how to represent this key characteristic of the environment was a major challenge from the project's beginning,
-                        and we trialled solutions from ECS spawning to vast particle effects.
-                        <br/>
-                        <br/>
-                        Using Shader Graph -->
+                    <div class="z1_1x1 leftAlign"> 
                         
-                        The surface of the cell is a seething membrane called Phospholipid Bilayer. 
-                        To depict it, I built a shader using layered voronoi patterns and parallax UVs to generate an endless 
-                        surface of spinning nodes. Vertex displacement and shifting fresnel patterns imitate the undulations of the cell, and 
-                        it fades into a scrolling texture at distance to avoid moire.  
+                        <h4>Shaders</h4>
+                        <h1>
+                            
+                            The surface of the cell is a seething membrane called Phospholipid Bilayer. 
+                            To depict it, I built a shader using layered voronoi patterns and parallax UVs to generate an endless 
+                            surface of spinning nodes. Vertex displacement and shifting fresnel patterns imitate the undulations of the cell, and 
+                            it fades into a scrolling texture at distance to avoid moire.  
+                            <br/> <br/>
+    
+                        </h1>
+                        </div> 
+                    
+                    <div class="z2_1x1"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/Nanoscape/shaderClose_square_11.gif?raw=true" alt="djkl" style="width: 500px; height: 508px;"> </div>
+                    <div class="z3_1x1"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/Nanoscape/shaderFar_19.gif?raw=true" alt="djkl" style="width: 500px; height: 508px;"> </div>
+
+                    <div class="z4_1x1"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/Nanoscape/techArt_lipidBilayer_00.png?raw=true" alt="djkl" style="width: 500x; height: 250px;"> </div>
+                    <div class="z7_1x1 leftAlign"> 
+
                         <br/> <br/>
+                        <h4>Tools</h4>
+                        <h1> 
+                            
+                            These twisting organic cables were created using a procedural spline-based tool I built in Houdini. It featured automatic UV mapping and collision testing, 
+                            ensuring the bundles could be easily modelled around other geometry. 
+                            <br/> <br/>
+                    
+                        </div>
 
-                 </h1>
-                </div> 
-                  <div class="z8_1x1"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/Nanoscape/techArt_lipidBilayer_00.png?raw=true" alt="djkl" style="width: 500x; height: 250px;"> </div>
-                  <div class="dividingLine"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/dividingLine.png?raw=true" alt="djkl" style="width: 2px; height: 779px;"> </div>
-
-
+                    <div class="z8_1x1"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/Nanoscape/ecm_glamour.png?raw=true" alt="djkl" style="width: 500px; height: 250px;"> </div>
+                    <div class="z9_1x1"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/Nanoscape/ecm_tool.png?raw=true" alt="djkl" style="width: 500px; height: 250px;"> </div>
                 </div>
             </div>
         
