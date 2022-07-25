@@ -74,40 +74,6 @@
     }
 
 
-/* #endregion */
-
-/* #region Drive Safe Honey - 2x2 top left, the rest 1x1 */
-
-    .dsh_00 {
-        grid-column: 1 /span 2;
-        grid-row: 1 / span 2;
-    }
-
-    .dsh_01{
-        grid-column: 3;
-        grid-row: 1;
-    }
-
-    .dsh_02{
-        grid-column: 3;
-        grid-row: 2;
-    }
-
-    .dsh_03 {
-        grid-column: 1;
-        grid-row: 3;
-    }
-
-    .dsh_04 {
-        grid-column: 2;
-        grid-row: 3;
-    }
-
-    .dsh_05 {
-        grid-column: 3;
-        grid-row: 3;
-    }
-/* #endregion */
 
 /* #region fullPage */
 .fullPage_00 {
@@ -122,310 +88,76 @@
 }
 /* #endregion */
 
-/* #region mooseLobby - 2x2 top left, 1x2 bottom right, the rest 1x1 */
 
-.mLob_00{
-    grid-column: 1/span 2;
-    grid-row: 1 / span 2;
+
+.fullPage {
+    grid-column: 1/span3;
+    grid-row: 1/span3;
 }
 
-.mLob_01{
-    grid-column: 3;
+/* 1x1 */
+
+.z1_1x1{
+    grid-column: 1;
     grid-row: 1;
 }
 
-.mLob_02{
-    grid-column: 3;
-    grid-row: 2/span2;
-
-}
-
-.mLob_03{
-    grid-column: 1;
-    grid-row: 3;
-}
-
-.mLob_04{
+.z2_1x1{
     grid-column: 2;
-    grid-row: 3;
-}
-
-/* #endregion */
-
-/* #region Nanoscape Intro - 2x2 top left, 1x2 top right, 2x1 bottom right */
-.nanoIntro_00 {
-    grid-column: 1/span2;
-    grid-row: 1/span2;
-}
-
-.nanoIntro_01{
-    grid-column: 3;
-    grid-row: 1/span2;
-}
-
-.nanoIntro_02{
-    grid-column: 1;
-    grid-row: 3;
-    background-color:rgb(255, 255, 255);
-}
-
-.nanoIntro_03{
-    grid-column: 2/span2;
-    grid-row: 3;
-}
-/* #endregion */
-
-/* #region Nanoscape Art Direction - 2x2 top right, the rest 1x1 */
-
-.nanoArtDir_00 {
-    grid-column: 1;
     grid-row: 1;
-
 }
 
-.nanoArtDir_01 {
+.z3_1x1{
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.z4_1x1{
     grid-column: 1;
     grid-row: 2;
 }
 
-.nanoArtDir_02 {
+.z5_1x1{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.z6_1x1{
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.z7_1x1{
     grid-column: 1;
     grid-row: 3;
 }
 
-.nanoArtDir_03 {
-    grid-column: 2/span2;
-    grid-row: 1/span2;
-    
-}
-
-.nanoArtDir_04 {
+.z8_1x1{
     grid-column: 2;
     grid-row: 3;
-
 }
 
-.nanoArtDir_05 {
+.z9_1x1{
     grid-column: 3;
     grid-row: 3;
-
 }
 
-/* #endregion */
+/* #region Animation and Rigging */
 
-/* #region test */
-
-.grid-container3 {
+.anim_rig_container {
   display: inline-grid;
-  grid-template-columns: 500px 250px 250px 500px;
-  grid-template-rows: 125px 125px 250px 250px;
-grid-gap:8px;
+  grid-template-columns: 500px 500px 154px 338px;
+  grid-template-rows: 250px 250px 250px;
+    grid-gap:8px;
   margin-left: auto;
 
 }
 
-.Hitem1 {
-    grid-column: 1;
-    grid-row: 1/span2;
-    background-color:whitesmoke;
-}
-
-.Hitem2{
-    grid-column: 2;
-    grid-row: 1;
-    margin: auto;
-}
-
-.Hitem3{
-    grid-column: 3;
-    grid-row: 1;
-    margin: auto;
-}
-
-.Hitem4 {
+.anim_rig_00{
     grid-column: 4;
-    grid-row: 1/span2;
-
-
-}
-
-.Hitem5 {
-    grid-column: 2;
-    grid-row: 2;
-    margin: auto;
-
-}
-
-.Hitem6 {
-    grid-column: 3;
-    grid-row: 2;
-    margin: auto;
-
-}
-
-.Hitem7 {
-    grid-column: 1;
-    grid-row: 3;
-
-}
-
-
-.Hitem8 {
-    grid-column: 2/span2;
-    grid-row: 3;
-
-}
-
-
-
-.Hitem9 {
-    grid-column: 1;
-    grid-row: 4;
-
-}
-
-.Hitem10 {
-    grid-column: 2/span2;
-    grid-row: 4;
-
-}
-
-.Hitem11{
-    grid-column: 4;
-    grid-row: 3/span2;
-
-}
-
-
-
-/* NANOSCAPE TECH ART */
-
-.nano_TechArt_item1 {
-    grid-column: 1/span2;
-    grid-row: 1 / span 2;
-}
-
-
-.nano_TechArt_item2 
-{
-    grid-column: 3;
-    grid-row: 1/span2;
-}
-
-.nano_TechArt_item3 
-{
-    grid-column: 1/ span 2;
-    grid-row: 3;
-}
-
-.nano_TechArt_item4
-{
-    grid-column: 3;
-    grid-row: 3;
-
-}
-
-/*Nanoscape Level Desiign */
-
-/* SYNGENTA PHASE 1*/
-
-.nano_levelDesign_item1 
-{
-    grid-column: 1;
     grid-row: 1;
 }
 
-
-.nano_levelDesign_item2 
-{
-    grid-column: 2;
-    grid-row: 1;
-}
-
-.nano_levelDesign_item3 
-{
-    grid-column: 3;
-    grid-row: 1;
-}
-
-.nano_levelDesign_item4
-{
-    grid-column: 1;
-    grid-row: 2/span2;
-
-}
-
-.nano_levelDesign_item5 
-{
-    grid-column: 2;
-    grid-row: 2/span2;
-}
-
-.nano_levelDesign_item6
-{
-    grid-column: 3;
-    grid-row: 2/span2;
-
-}
-
-.syng_P1_00
-{
-    grid-column: 1/span3;
-    grid-row: 1;
-}
-
-.syng_P1_01
-{
-    grid-column: 1;
-    grid-row: 2;
-}
-
-.syng_P1_02
-{
-    grid-column: 1;
-    grid-row: 3;
-}
-
-.syng_P1_03
-{
-    grid-column: 2/span2;
-    grid-row: 2/span2;
-}
-
-
-/* SYNGENTA PHASE 2*/
-
-.syng_P2_00
-{
-    grid-column: 1/span2;
-    grid-row: 1;
-}
-
-.syng_P2_01
-{
-    grid-column: 3;
-    grid-row: 1/span2;
-}
-
-.syng_P2_02
-{
-    grid-column: 1;
-    grid-row: 3;
-}
-
-.syng_P2_03
-{
-    grid-column: 2;
-    grid-row: 3;
-}
-
-.syng_P2_04
-{
-    grid-column: 3;
-    grid-row: 3;
-}
-
-/* #endregion */
 
 /* #region TEXT */
 
@@ -510,136 +242,7 @@ h7 {
 /* #endregion */
 
 
-.fullPage {
-    grid-column: 1/span3;
-    grid-row: 1/span3;
-}
 
-/* 1x1 */
-
-.z1_1x1{
-    grid-column: 1;
-    grid-row: 1;
-}
-
-.z2_1x1{
-    grid-column: 2;
-    grid-row: 1;
-}
-
-.z3_1x1{
-    grid-column: 3;
-    grid-row: 1;
-}
-
-.z4_1x1{
-    grid-column: 1;
-    grid-row: 2;
-}
-
-.z5_1x1{
-    grid-column: 2;
-    grid-row: 2;
-}
-
-.z6_1x1{
-    grid-column: 3;
-    grid-row: 2;
-}
-
-.z7_1x1{
-    grid-column: 1;
-    grid-row: 3;
-}
-
-.z8_1x1{
-    grid-column: 2;
-    grid-row: 3;
-}
-
-.z9_1x1{
-    grid-column: 3;
-    grid-row: 3;
-}
-
-/* #region 2x1 */
-
-.z1_2x1{
-    grid-column: 1/span2;
-    grid-row: 1;
-}
-
-.z2_2x1{
-    grid-column: 2/span2;
-    grid-row: 1;
-}
-
-.z4_2x1{
-    grid-column: 1/span2;
-    grid-row: 2;
-}
-
-.z5_2x1{
-    grid-column: 2/span2;
-    grid-row: 2;
-}
-
-.z7_2x1{
-    grid-column: 1/span2;
-    grid-row: 1;
-}
-
-.z8_2x1{
-    grid-column: 2/span2;
-    grid-row: 3;
-}
-
-/* #endregion */
-/* #region 2x1 */
-
-.z1_1x2{
-    grid-column: 1;
-    grid-row: 1/span2;
-}
-
-.z2_1x2{
-    grid-column: 2;
-    grid-row: 1/span2;
-}
-
-.z3_1x2{
-    grid-column: 3;
-    grid-row: 1/span2;
-}
-
-.z4_1x2{
-    grid-column: 1;
-    grid-row: 2/span2;
-}
-
-.z5_1x2{
-    grid-column: 2;
-    grid-row: 2/span2;
-}
-
-.z6_1x2{
-    grid-column: 3;
-    grid-row: 2/span2;
-}
-/* #endregion */
-/* #region 2x2 */
-
-
-.z1_2x2{
-    grid-column: 1/span2;
-    grid-row: 1/span2;
-}
-
-.z2_2x2{
-    grid-column: 2/span2;
-    grid-row: 1/span2;
-}
-/* #endregion */
 
 </style>
 
@@ -658,12 +261,6 @@ h7 {
                 <div class="gridContainer">
                     <div class="fullPage_00"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/titlePage_0722.png?raw=true" alt= "Title Page" style="width: 1536px; height: 779px;"> </div>
                     </div>
-            </div>
-
-            <div>
-                <div class="gridContainer">
-                    <div class="z1_1x1"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/Nanoscape/nanoScapeCover_00.png?raw=true" alt="Nanoscape Hero" style="width: 1536px; height: 779px;"> </div>
-               </div>
             </div>
 
             <div>
@@ -852,7 +449,7 @@ h7 {
 
 
             <div>
-                <div class="gridContainer">
+                <div class="anim_rig_container">
                     <div class="z1_1x1 leftAlign"> 
                         <h3>Animation and Rigging</h3>
                         <h5>An educational iOS app introducing Syngenta's clients to a new seedcare product. 
@@ -865,9 +462,24 @@ h7 {
                         
                         </h5>
                     </div>
-                    <div class="z2_1x1"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/Syngenta/introFrame_00.png?raw=true" alt="djkl" style="width: 1008px; height: 250px;"> </div>
-                    <div class="z4_1x1"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/Syngenta/engineWheat_06.gif?raw=true" alt="djkl" style="width: 500px; height: 508px;"> </div>
-                    <div class="z5_1x1"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/Syngenta/syngentaTouch_edit_04.gif?raw=true" alt="djkl" style="width: 1008px; height: 508px;"> </div>
+                    <div class="z2_1x1"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/Nanoscape/dimers/dimer_rigAndAnim_00.gif?raw=true" alt="djkl" style="width: 662px; height: 508px;"> </div>
+                    <div class="anim_rig_00"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/Nanoscape/dimers/EGFrComp_00.gif?raw=true" alt="djkl" style="width: 338px; height: 508px;"> </div>
+                    <div class="z4_1x1 leftAlign"> 
+                        <h3>Animation and Rigging</h3>
+                        <h5>An educational iOS app introducing Syngenta's clients to a new seedcare product. 
+                            <br><br>
+                            
+                            Given a broad brief and short development window. I designed, documented and successfully pitched the idea of user-controlled timelapse animation to the client.
+                            I researched and animated the realistic growth of a wheat plant, 
+                            and built the app unassisted. 
+                            
+                        
+                        </h5>
+                    </div>
+                    <div class="z7_1x1"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/misc/poseAndRig_00.png?raw=true" alt="djkl" style="width: 500px; height: 250px;"> </div>
+                    <div class="z8_1x1"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/misc/funGun_rigged.gif?raw=true" alt="djkl" style="width: 500px; height: 250px;"> </div>
+                    <div class="z9_1x1"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/misc/borealisDuo_00.gif?raw=true" alt="djkl" style="width: 500px; height: 250px;"> </div>
+                    
                     
                     
                 </div>
@@ -891,9 +503,7 @@ h7 {
                             
                             Given a broad brief and short development window. I designed, documented and successfully pitched the idea of user-controlled timelapse animation to the client.
                             I researched and animated the realistic growth of a wheat plant, 
-                            and built the app unassisted. 
-                            
-                        
+                            and built the app unassisted.  
                         </h5>
                     </div>
                     <div class="z2_1x1"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/Syngenta/introFrame_00.png?raw=true" alt="djkl" style="width: 1008px; height: 250px;"> </div>
@@ -928,17 +538,17 @@ h7 {
               </div>
           </div>
 
-        -->
+-->
 
 <!--
     DSH
 -->
           <div>
               <div class="gridContainer">
-                  <div class="dsh_00"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/dsh/DSH_Hero_Web.png?raw=true" alt="djkl" style="width: 1008px; height: 508px;"> </div>
-                 <div class="dsh_01"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/dsh/DSH_Gif.gif?raw=true" alt="djkl" style="width: 500px; height: 250px;"> </div>
-                 <div class="dsh_02">  <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/dsh/dsh_2Player_00.png?raw=true" alt="djkl" style="width: 500px; height: 250px;"> </div>  
-                 <div class="grid-item dsh_03 leftAlign"> 
+                  <div class="z2_1x1"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/dsh/hero_01.png?raw=true" alt="djkl" style="width: 1008px; height: 508px;"> </div>
+                 <div class="z4_1x1"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/dsh/trackBuilder_01.gif?raw=true" alt="djkl" style="width: 500px; height: 508px;"> </div>
+                 <div class="z9_1x1">  <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/dsh/DSH_Gif.gif?raw=true" alt="djkl" style="width: 500px; height: 250px;"> </div>  
+                 <div class="grid-item z1_1x1 leftAlign"> 
 
                     <h6>Drive Safe, Honey!</h6>
                     <h2>2017</h2>
@@ -950,15 +560,13 @@ h7 {
 
                     </h5>
                 </div>
-                <div class="dsh_04">  <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/dsh/DSH_Track_Builder_Gif.gif?raw=true" alt="djkl" style="width: 500px; height: 250px;"> </div>
-                <div class="dsh_05">  <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/dsh/dsh_sunRoad.png?raw=true" alt="djkl" style="width: 500px; height: 250px;"> </div>
+                <div class="z8_1x1">  <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/dsh/DSH_Track_Builder_Gif.gif?raw=true" alt="djkl" style="width: 500px; height: 250px;"> </div>
 
              </div>
           </div>
 
-<!--
-    MISC
--->
+<!--                MISC
+
             <div>
                 <div class="gridContainer">
                 <div class="z1_1x1 leftAlign"> 
@@ -986,6 +594,8 @@ h7 {
 
             </div>
             </div>
+
+-->
 
 
         
