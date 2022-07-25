@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NJG Dot World</title>
+
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DDCP158N75"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DDCP158N75');
+</script>
+
+
+<style>
+
+
+/* #region SETUP */
+    .container {
+    margin: 0 auto;
+    padding: 40px;
+    width: 80%;
+    color: #333;
+    }
+
+    .slick-prev:before {
+    color: black;
+    }
+    .slick-next:before {
+    color: black;
+    }
+
+    .slick-slide {
+    text-align: center;
+    background: white;
+
+    }
+
+    .bigDiv
+    {
+    height: 100vh;
+    
+    }
+
+    .element {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    }
+
+    .gridContainer {
+    display: inline-grid;
+    grid-template-columns: 500px 500px 500px;
+    grid-template-rows: 250px 250px 250px;
+    grid-gap: 8px;
+    margin-left: auto;
+    }
+
+
+
+    .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 30px;
+    text-align: center;
+    }
+
+
+/* #endregion */
+
+/* #region Drive Safe Honey - 2x2 top left, the rest 1x1 */
+
+    .dsh_00 {
+        grid-column: 1 /span 2;
+        grid-row: 1 / span 2;
+    }
+
+    .dsh_01{
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    .dsh_02{
+        grid-column: 3;
+        grid-row: 2;
+    }
+
+    .dsh_03 {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .dsh_04 {
+        grid-column: 2;
+        grid-row: 3;
+    }
+
+    .dsh_05 {
+        grid-column: 3;
+        grid-row: 3;
+    }
+/* #endregion */
+
+/* #region fullPage */
+.fullPage_00 {
+    grid-column: 1 /span 3;
+    grid-row: 1 / span 3;
+}
+
+.fullPage_01
+{
+    grid-column: 1;
+    grid-row: 1;
+}
+/* #endregion */
+
+/* #region mooseLobby - 2x2 top left, 1x2 bottom right, the rest 1x1 */
+
+.mLob_00{
+    grid-column: 1/span 2;
+    grid-row: 1 / span 2;
+}
+
+.mLob_01{
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.mLob_02{
+    grid-column: 3;
+    grid-row: 2/span2;
+
+}
+
+.mLob_03{
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.mLob_04{
+    grid-column: 2;
+    grid-row: 3;
+}
+
+/* #endregion */
+
+/* #region Nanoscape Intro - 2x2 top left, 1x2 top right, 2x1 bottom right */
+.nanoIntro_00 {
+    grid-column: 1/span2;
+    grid-row: 1/span2;
+}
+
+.nanoIntro_01{
+    grid-column: 3;
+    grid-row: 1/span2;
+}
+
+.nanoIntro_02{
+    grid-column: 1;
+    grid-row: 3;
+    background-color:rgb(255, 255, 255);
+}
+
+.nanoIntro_03{
+    grid-column: 2/span2;
+    grid-row: 3;
+}
+/* #endregion */
+
+/* #region Nanoscape Art Direction - 2x2 top right, the rest 1x1 */
+
+.nanoArtDir_00 {
+    grid-column: 1;
+    grid-row: 1;
+
+}
+
+.nanoArtDir_01 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.nanoArtDir_02 {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.nanoArtDir_03 {
+    grid-column: 2/span2;
+    grid-row: 1/span2;
+    
+}
+
+.nanoArtDir_04 {
+    grid-column: 2;
+    grid-row: 3;
+
+}
+
+.nanoArtDir_05 {
+    grid-column: 3;
+    grid-row: 3;
+
+}
+
+/* #endregion */
+
+/* #region test */
+
+.grid-container3 {
+  display: inline-grid;
+  grid-template-columns: 500px 250px 250px 500px;
+  grid-template-rows: 125px 125px 250px 250px;
+grid-gap:8px;
+  margin-left: auto;
+
+}
+
+.Hitem1 {
+    grid-column: 1;
+    grid-row: 1/span2;
+    background-color:whitesmoke;
+}
+
+.Hitem2{
+    grid-column: 2;
+    grid-row: 1;
+    margin: auto;
+}
+
+.Hitem3{
+    grid-column: 3;
+    grid-row: 1;
+    margin: auto;
+}
+
+.Hitem4 {
+    grid-column: 4;
+    grid-row: 1/span2;
+
+
+}
+
+.Hitem5 {
+    grid-column: 2;
+    grid-row: 2;
+    margin: auto;
+
+}
+
+.Hitem6 {
+    grid-column: 3;
+    grid-row: 2;
+    margin: auto;
+
+}
+
+.Hitem7 {
+    grid-column: 1;
+    grid-row: 3;
+
+}
+
+
+.Hitem8 {
+    grid-column: 2/span2;
+    grid-row: 3;
+
+}
+
+
+
+.Hitem9 {
+    grid-column: 1;
+    grid-row: 4;
+
+}
+
+.Hitem10 {
+    grid-column: 2/span2;
+    grid-row: 4;
+
+}
+
+.Hitem11{
+    grid-column: 4;
+    grid-row: 3/span2;
+
+}
+
+
+
+/* NANOSCAPE TECH ART */
+
+.nano_TechArt_item1 {
+    grid-column: 1/span2;
+    grid-row: 1 / span 2;
+}
+
+
+.nano_TechArt_item2 
+{
+    grid-column: 3;
+    grid-row: 1/span2;
+}
+
+.nano_TechArt_item3 
+{
+    grid-column: 1/ span 2;
+    grid-row: 3;
+}
+
+.nano_TechArt_item4
+{
+    grid-column: 3;
+    grid-row: 3;
+
+}
+
+/*Nanoscape Level Desiign */
+
+/* SYNGENTA PHASE 1*/
+
+.nano_levelDesign_item1 
+{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+
+.nano_levelDesign_item2 
+{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.nano_levelDesign_item3 
+{
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.nano_levelDesign_item4
+{
+    grid-column: 1;
+    grid-row: 2/span2;
+
+}
+
+.nano_levelDesign_item5 
+{
+    grid-column: 2;
+    grid-row: 2/span2;
+}
+
+.nano_levelDesign_item6
+{
+    grid-column: 3;
+    grid-row: 2/span2;
+
+}
+
+.syng_P1_00
+{
+    grid-column: 1/span3;
+    grid-row: 1;
+}
+
+.syng_P1_01
+{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.syng_P1_02
+{
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.syng_P1_03
+{
+    grid-column: 2/span2;
+    grid-row: 2/span2;
+}
+
+
+/* SYNGENTA PHASE 2*/
+
+.syng_P2_00
+{
+    grid-column: 1/span2;
+    grid-row: 1;
+}
+
+.syng_P2_01
+{
+    grid-column: 3;
+    grid-row: 1/span2;
+}
+
+.syng_P2_02
+{
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.syng_P2_03
+{
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.syng_P2_04
+{
+    grid-column: 3;
+    grid-row: 3;
+}
+
+/* #endregion */
+
+/* #region TEXT */
+
+h3 { 
+    font-family: "Open Sans"; 
+    font-size: 26px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 26.4px; 
+
+    margin: 20px 0 2px 15px;
+} 
+
+h6 { 
+    font-family: "Open Sans"; 
+    font-size: 20px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 26.4px; 
+
+    margin: 20px 0 2px 15px;
+} 
+
+h2{
+    font-family: "Open Sans"; 
+    font-size: 16px; 
+    font-style: italic; 
+    font-variant: normal; 
+    font-weight: 400; 
+    margin:0 15px 0 15px;
+    padding:0;
+
+}
+
+h1{
+    font-family: "Open Sans"; 
+    font-size: 16px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    margin:10px 15px 0 15px;
+    padding:0;
+}
+
+h5{
+    font-family: "Open Sans"; 
+    font-size: 14px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    margin:10px 15px 0 15px;
+    padding:0;
+}
+
+h4 { 
+    font-family: "Open Sans"; 
+    font-size: 23px; 
+    font-style: italic; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 26.4px; 
+
+    margin: 25px 0px 20px 15px;
+} 
+
+
+
+.leftAlign{
+    text-align: left !important;
+}
+
+/* #endregion */
+
+
+.fullPage {
+    grid-column: 1/span3;
+    grid-row: 1/span3;
+}
+
+/* 1x1 */
+
+.z1_1x1{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.z2_1x1{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.z3_1x1{
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.z4_1x1{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.z5_1x1{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.z6_1x1{
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.z7_1x1{
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.z8_1x1{
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.z9_1x1{
+    grid-column: 3;
+    grid-row: 3;
+}
+
+/* #region 2x1 */
+
+.z1_2x1{
+    grid-column: 1/span2;
+    grid-row: 1;
+}
+
+.z2_2x1{
+    grid-column: 2/span2;
+    grid-row: 1;
+}
+
+.z4_2x1{
+    grid-column: 1/span2;
+    grid-row: 2;
+}
+
+.z5_2x1{
+    grid-column: 2/span2;
+    grid-row: 2;
+}
+
+.z7_2x1{
+    grid-column: 1/span2;
+    grid-row: 1;
+}
+
+.z8_2x1{
+    grid-column: 2/span2;
+    grid-row: 3;
+}
+
+/* #endregion */
+/* #region 2x1 */
+
+.z1_1x2{
+    grid-column: 1;
+    grid-row: 1/span2;
+}
+
+.z2_1x2{
+    grid-column: 2;
+    grid-row: 1/span2;
+}
+
+.z3_1x2{
+    grid-column: 3;
+    grid-row: 1/span2;
+}
+
+.z4_1x2{
+    grid-column: 1;
+    grid-row: 2/span2;
+}
+
+.z5_1x2{
+    grid-column: 2;
+    grid-row: 2/span2;
+}
+
+.z6_1x2{
+    grid-column: 3;
+    grid-row: 2/span2;
+}
+/* #endregion */
+/* #region 2x2 */
+
+
+.z1_2x2{
+    grid-column: 1/span2;
+    grid-row: 1/span2;
+}
+
+.z2_2x2{
+    grid-column: 2/span2;
+    grid-row: 1/span2;
+}
+/* #endregion */
+
+</style>
+
+</head>
+
+<body>
+
+<div class='bigDiv'>
+
+  <div class='element'>
+    <div class='container'>
+        <div class='single-item'>
+
+
+            <div>
+                <div class="gridContainer">
+                    <div class="fullPage_00"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/titlePage_0722.png?raw=true" alt= "Title Page" style="width: 1536px; height: 779px;"> </div>
+          
+                </div>
+            </div>
+
+            <div>
+                <div class="gridContainer">
+                    <div class="z1_1x1"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/Nanoscape/nanoScapeCover_00.png?raw=true" alt="Nanoscape Hero" style="width: 1536px; height: 779px;"> </div>
+  
+               </div>
+            </div>
+
+            <div>
+                <div class="gridContainer">
+                    <div class="z1_2x2"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/Nanoscape/heroGif_22.gif?raw=true" alt="nanoHeroGif" style="width: 1008px; height: 508px;"> </div>
+                  <div class="z3_1x1"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/Nanoscape/cavInsertion_00.png?raw=true" alt="cavInsertion" style="width: 500px; height: 508px;"> </div>
+                  <div class="z7_1x1 leftAlign">  
+                    <h6>Nanoscape</h6>
+                    <h2>2021</h2>
+                    <h2>Lead Artist</h2>
+                    <h1>An educational first-person exploration game developed by the UNSW 3DVAL. The player navigates a cancer cell as a scientist shrunk to a height of 40 nanometers. 
+                        <br><br>
+                        As Lead Artist, I fulfilled a number of roles on the project. 
+                    </h1>
+    
+                  </div>  
+                  <div class="z8_1x1"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/Nanoscape/receptorCloseUp_00.png?raw=true" alt="djkl" style="width: 1008px; height: 250px;"> </div>
+                  
+                </div>
+            </div>
+            
+
+<!--
+    ART DIRECTION
+-->
+
+            <div>
+                <div class="gridContainer">
+                    <!-- <div class="z1_1x1 leftAlign"> 
+                        <h4>Art Direction and Conceptual Design</h4>
+                        
+                        
+                        <h1>I guided the character and atmosphere of the experience throughout its development. <br/>
+                            <br/>
+                            From reference through to concept art, renders and iterations,
+                            I worked to create a cohesive visual language that would express the chaos and complexity of the molecular world. </h1>
+                        
+                    </div>
+                -->
+                <div class="z1_1x1"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/Nanoscape/clay1_3DVAL.png?raw=true" alt="djkl" style="width: 500px; height:250px;"> </div>
+                    <div class="z2_1x1"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/Nanoscape/artDir_concept_00.png?raw=true" alt="djkl" style="width: 500px; height:250px;"> </div>
+                    <div class="z3_1x1">  <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/Nanoscape/artDir_concept_01.png?raw=true" alt="djkl" style="width: 500px; height: 250px;"> </div>  
+                    <div class="z4_1x1"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/Nanoscape/vrGif_31.gif?raw=true" alt="djkl" style="width: 1008; height: 508px;"> </div>
+                    <div class="z9_1x1"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/Nanoscape/artDir_iteration_03.png?raw=true" alt="djkl" style="width: 500px; height: 250px;"> </div>
+                    <div class="z6_1x1"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/Nanoscape/artDir_iteration_00.png?raw=true" alt="djkl" style="width: 500px; height: 250px;"> </div>
+                </div>
+            </div>
+
+
+
+
+            <!--
+            <div>
+                <div class="gridContainer">
+                    <div class="nano_levelDesign_item1 leftAlign"> 
+                        <h4>Level Design and Narrative Design</h4>
+                        
+                        <h1>In reality, this environment is non-spacial, most of its features being smaller than the wavelength of light. Bringing it to a legible human
+                            scale was a task that required endless iteration and reimagining.
+                            <br/>
+                            <br/>
+                            I led this process, and built many prototypical environments. </h1>
+                    </div>
+                  <div class="nano_levelDesign_item2"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/weta/050_level_00.png?raw=true" alt="djkl" style="width: 500px; height: 250px;"> </div>
+                  <div class="nano_levelDesign_item3">  <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/weta/051_level_01.png?raw=true" alt="djkl" style="width: 500px; height: 250px;"> </div>  
+                  <div class="nano_levelDesign_item4"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/weta/052_level_02.png?raw=true" alt="djkl" style="width: 500px; height: 508px;"> </div>
+                  <div class="nano_levelDesign_item5"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/weta/053_level_03.png?raw=true" alt="djkl" style="width: 500px; height: 508px;"> </div>
+                  <div class="nano_levelDesign_item6"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/weta/054_level_04.png?raw=true" alt="djkl" style="width: 500px; height: 508px;"> </div>
+                </div>
+            </div>
+            -->
+            
+<!--
+    SHADERS AND TOOLS
+-->
+
+            <div>
+                <div class="gridContainer">
+                    <div class="z1_1x1 leftAlign"> 
+                        
+                        <h6>Shaders</h6>
+                        <h1>
+                            
+                            The surface of the cell is a seething membrane called Phospholipid Bilayer. 
+                            To depict it, I built a shader using layered voronoi patterns and parallax UVs to generate an endless 
+                            surface of spinning nodes. Vertex displacement and shifting fresnel patterns imitate the undulations of the cell, and 
+                            it fades into a scrolling texture at distance to avoid moire.  
+                            <br/> <br/>
+    
+                        </h1>
+                        </div> 
+                    
+                    <div class="z2_1x1"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/Nanoscape/shaderClose_square_11.gif?raw=true" alt="djkl" style="width: 500px; height: 508px;"> </div>
+                    <div class="z3_1x1"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/Nanoscape/shaderFar_19.gif?raw=true" alt="djkl" style="width: 500px; height: 508px;"> </div>
+
+                    <div class="z4_1x1"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/Nanoscape/techArt_lipidBilayer_00.png?raw=true" alt="djkl" style="width: 500x; height: 250px;"> </div>
+                    <div class="z7_1x1 leftAlign"> 
+
+                        <h6>Tools</h6>
+                        <h1> 
+                            
+                            These twisting organic cables were created using a procedural spline-based tool I built in Houdini. It featured automatic UV mapping and collision testing, 
+                            ensuring the bundles could be easily modelled around other geometry. 
+                            <br/> <br/>
+                    
+                        </div>
+
+                    <div class="z8_1x1"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/Nanoscape/ecm_glamour.png?raw=true" alt="djkl" style="width: 500px; height: 250px;"> </div>
+                    <div class="z9_1x1"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/Nanoscape/ecm_tool.png?raw=true" alt="djkl" style="width: 500px; height: 250px;"> </div>
+                </div>
+            </div>
+        
+
+<!-- PRODUCTION  
+    
+
+            <div>
+                <div class="gridContainer">
+                    <div class="grid-item Citem1"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/Nanoscape/organisationCollage_00.png?raw=true" alt="organisationalCollage" style="width: 1536px; height: 768px;"> </div>
+  
+                    <div class="Citem2 leftAlign"> 
+                        <h4>Production</h4>
+                        
+                        <h5>I also coordinated the team, which included remote members. As well as day-to-day scheduling and delegation, 
+                            it was my job to establish, communicate and maintain a complex animation pipeline. 
+                            Prioritisation of which elements of the environment would be represented and how was a hotly debated subject amongst the lab's scientific staff, 
+                            and I took responsibility for mediating these discussions and crystallising their outcomes. <br/>
+                            <br/></h5>
+                    </div>
+               </div>
+            </div>
+-->
+
+<!-- SYNGENTA 00
+
+
+            <div>
+                <div class="gridContainer">
+                    <div class="grid-item syng_P1_00"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/Syngenta/syngenta_frameArray_00.png?raw=true" alt="djkl" style="width: 1516px; height: 250px;"> </div>
+                    <div class="grid-item syng_P1_01"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/Syngenta/introGif_00.gif?raw=true" alt="djkl" style="width: 500px; height: 250px;"> </div>
+                    <div class="syng_P1_02 leftAlign"> 
+                        <h3>Syngenta Prototype</h3>
+                        <h2>2021</h2>
+                        <h2>Designer, Delevoper</h2>
+                        <h5>An educational iOS app introducing Syngenta's clients to a new seedcare product. 
+                            <br><br>
+                            
+                            Given a broad brief and short development window. I designed, documented and successfully pitched the idea of user-controlled timelapse animation to the client.
+                            I researched and animated the realistic growth of a wheat plant, 
+                            and built the app unassisted. 
+                            
+                            <br><br>
+                           
+
+                        </h5>
+                    </div>
+                    <div class="grid-item syng_P1_03"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/Syngenta/syngentaTouch_00.gif?raw=true" alt="djkl" style="width: 1008px; height: 500px;"> </div>
+                  </div>
+            </div>
+
+-->
+            
+<!--SYNGENTA 01
+            
+            <div>
+                <div class="gridContainer">
+                    <div class="grid-item syng_P2_00"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/Syngenta/syng_greenhouseInterior_00.png?raw=true" alt="djkl" style="width: 1008px; height: 500px;"> </div>
+                    <div class="grid-item syng_P2_01"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/Syngenta/syng_fieldAndCanopy_00.png?raw=true" alt="djkl" style="width: 500px; height: 500px;"> </div>
+                    <div class="syng_P2_02 leftAlign"> 
+                        <h3>Syngenta Phase 2</h3>
+                        <h2>2022</h2>
+                        <h1>In the next phase of this project, the original design will be adapted to VR. 
+                            It will take place in an immersive environment, with more complex interactions. 
+                            <br><br>
+                            In preparation for departing the lab, I created extensive documentation to guide further development.
+                            This included detailed summaries of scientific context, retrospective analysis of phase 1, design documents, and concept art. 
+ 
+                            <br><br>
+                        </h1>
+                    </div>
+                    <div class="grid-item syng_P2_03"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/Syngenta/syng_guideMash_00.png?raw=true" alt="djkl" style="width: 500px; height: 250px;"> </div>
+                    <div class="grid-item syng_P2_04"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/Syngenta/timelineControllerVR_00.png?raw=true" alt="djkl" style="width: 500px; height: 250px;"> </div>
+                  </div>
+            </div>
+            
+-->
+
+<!--
+    MOOSELOBBY
+-->
+            <div>
+              <div class="gridContainer">
+                  <div class="mLob_00"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/mLob/MLob_Hero_Web_Small.png?raw=true" alt="djkl" style="width: 1008px; height: 508px;"> </div>
+                <div class="mLob_01"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/mLob/MLob_Gif.gif?raw=true" alt="djkl" style="width: 500px; height: 250px;"> </div>
+                <div class="mLob_02">  <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/mLob/MLob_DeskView_Web.png?raw=true" alt="djkl" style="width: 500px; height: 508px;"> </div>  
+                <div class="grid-item mLob_03 leftAlign"> 
+                    
+                    <h6>Paper Moose VR Launchpad</h6>
+                    <h2>2018</h2>
+                    <h2>Designer, 3D Artist</h2>
+                    <h1>An interactive 3D environment for the Oculus Go, developed to showcase the VR and 360 video work of creative agency Paper Moose.             
+                    </h1>
+
+                </div>
+                <div class="mLob_04"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/mLob/MLob_Furniture_Web.png?raw=true" alt="djkl" style="width: 500px; height: 250px;"> </div>
+              </div>
+          </div>
+
+<!--
+    DSH
+-->
+          <div>
+              <div class="gridContainer">
+                  <div class="dsh_00"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/dsh/DSH_Hero_Web.png?raw=true" alt="djkl" style="width: 1008px; height: 508px;"> </div>
+                 <div class="dsh_01"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/dsh/DSH_Gif.gif?raw=true" alt="djkl" style="width: 500px; height: 250px;"> </div>
+                 <div class="dsh_02">  <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/dsh/dsh_2Player_00.png?raw=true" alt="djkl" style="width: 500px; height: 250px;"> </div>  
+                 <div class="grid-item dsh_03 leftAlign"> 
+
+                    <h6>Drive Safe, Honey!</h6>
+                    <h2>2017</h2>
+                    <h2>Designer, 3D Artist</h2>
+                    <h5>Alternately titled "Mid-Life Mario Kart", couch multiplayer racing game was developed by myself and a partner. 
+                        <br><br>
+                        I designed the environment, and created the track with a parametric modelling tool built in Grasshopper.
+                       
+
+                    </h5>
+                </div>
+                <div class="dsh_04">  <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/dsh/DSH_Track_Builder_Gif.gif?raw=true" alt="djkl" style="width: 500px; height: 250px;"> </div>
+                <div class="dsh_05">  <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/dsh/dsh_sunRoad.png?raw=true" alt="djkl" style="width: 500px; height: 250px;"> </div>
+
+             </div>
+          </div>
+
+<!--
+    MISC
+-->
+            <div>
+                <div class="gridContainer">
+                <div class="z1_1x1 leftAlign"> 
+
+                    <h6>Dance Boys</h6>
+                    <h2>2016</h2>
+                    <h5> A University animation project. As a learning exercise, I rigged this character from scratch.
+                    </h5>
+
+                    <br/>
+
+                    <h6>Pixels</h6>
+                    <h2>2017</h2>
+                    <h5>An edifying experience.
+                    </h5>
+
+
+                </div>
+                <div class="z2_1x1"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/misc/danceBoys_pose_square.png?raw=true" alt="djkl" style="width: 500px; height: 508px;"> </div>
+                <div class="z3_1x1"> <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/misc/DanceBoys_Rig_Web.png?raw=true" alt="djkl" style="width: 500px; height: 508px;"> </div>
+                <div class="z4_1x1">  <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/misc/danceBoys_closeSpin.png?raw=true" alt="djkl" style="width: 500px; height: 250px;"> </div>  
+                
+                <div class="z7_1x1">  <img src="https://github.com/ng-fyi/ng-fyi.github.io/blob/main/content/misc/allEverything.gif?raw=true" alt="djkl" style="width: 1536x; height: 250px;"> </div>
+
+
+            </div>
+            </div>
+
+
+        
+   
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+   
+
+<script>
+$(".single-item").slick({
+  dots: true,
+  adaptiveHeight: true,
+  fade: true,
+
+
+
+});
+
+</script>
+
+</body>
+</html>
