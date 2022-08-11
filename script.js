@@ -4,6 +4,7 @@ $(".single-item").slick({
    fade: true,
    dots:true,
    adaptiveHeight: true,
+   lazyLoad: 'progressive',
 
  });
 
